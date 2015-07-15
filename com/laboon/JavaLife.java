@@ -51,12 +51,16 @@ public class JavaLife {
 	 */
 	
 	public static void main(String[] args) {
+//		System.out.println("Please input values");
+//		Scanner s = new Scanner(System.in);
+//	    String n1 = s.next();
+//		
 		if (args.length != 4) {
 			System.err.println(getErrMessage());
 			System.exit(1);
 		}
 		
-		int size = 0, seed = 0, percent = 0, maxIterations = 0;
+		int size = 1000, seed = 10, percent = 30, maxIterations = 1000;
 		
 		try {
 			size          = Integer.parseInt(args[0]);

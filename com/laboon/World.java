@@ -2,6 +2,8 @@ package com.laboon;
 
 import java.util.Random;
 
+import javax.swing.text.StyledEditorKit.ForegroundAction;
+
 public class World {
 
 	/**
@@ -128,7 +130,22 @@ public class World {
 			toReturn += "\n";
 		}
 		return toReturn;
-	}
+	}	
+//    public String toString() {
+//		StringBuilder toReturn = new StringBuilder("  ");
+//		for (int j= 0; j < _size; j++) {
+//			toReturn.append(String.valueOf(j % 10));
+//		}
+//		toReturn.append("\n");
+//		for (int j = 0; j < _size; j++ ) {
+//			toReturn.append(String.valueOf(j % 10) + " ");
+//			for (int k = 0; k < _size; k++) {
+//				toReturn.append(_world[j][k].getStateRep());
+//			}
+//			toReturn.append("\n");
+//		}
+//		return toReturn.toString();
+//    }
 	
 	/**
 	 * Generate initial game board.
